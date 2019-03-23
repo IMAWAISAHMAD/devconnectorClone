@@ -54,7 +54,7 @@ class PostItem extends Component {
                   className="btn btn-light mr-1"
                 >
                   <i
-                    className={classnames('fas fa-thumbs-up', {
+                    className={classnames('fa fa-thumbs-up', {
                       'text-info': this.findUserLike(post.likes)
                     })}
                   />
@@ -65,7 +65,7 @@ class PostItem extends Component {
                   type="button"
                   className="btn btn-light mr-1"
                 >
-                  <i className="text-secondary fas fa-thumbs-down" />
+                  <i className="text-secondary fa fa-thumbs-down" />
                 </button>
                 <Link to={`/post/${post._id}`} className="btn btn-info mr-1">
                   Comments
@@ -76,7 +76,7 @@ class PostItem extends Component {
                     type="button"
                     className="btn btn-danger mr-1"
                   >
-                    <i className="fas fa-times" />
+                    <i className="fa fa-times" />
                   </button>
                 ) : null}
               </span>
