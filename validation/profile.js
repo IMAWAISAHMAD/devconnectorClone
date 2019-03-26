@@ -25,8 +25,8 @@ module.exports = function validateProfileInput(data) {
   }
 
   if (!isEmpty(data.website)) {
-    if (!Validator.isURL(data.website,{protocols:['http','https','ftp']})) {
-      errors.website = 'Not a valid URL';
+    if (!Validator.isURL(data.website,{protocols:['http','https','ftp','ftps'],require_protocol:true})) {
+      errors.website = 'Not a valid URL,Please Enter URL with Protocol e.g [http,https]';
     }
   }
 
